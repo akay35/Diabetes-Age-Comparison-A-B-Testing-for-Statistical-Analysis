@@ -18,7 +18,7 @@ During data analysis, the assumption of normality for age data was tested. This 
 
 <img src="https://github.com/akay35/image/blob/main/2%20Korelasyon%20analizi.png" alt="This is my world" width="730" height="360"/>   
 
-<hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;">
+<hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;"> 
 <h2 style="color:blue; font-family:Arial; text-align:left;">Shapiro-Wilk Test (Normality Test): 🤔</h2>
 <p>
 The Shapiro-Wilk test is a non-parametric test used to determine whether the data follows a normal distribution. The null hypothesis (H0) of this test states that the data is normally distributed.
@@ -54,5 +54,10 @@ In this analysis, the Shapiro-Wilk test was conducted to test the normality assu
 <li>The Shapiro-Wilk Test checks whether the data follows a normal distribution. If the p-value is less than 0.05, non-parametric tests are applied.</li>
 <li>The Mann-Whitney U Test evaluates the difference in medians between two groups. If the p-value is less than 0.05, it indicates a significant difference between the groups.</li>
 </ul>
+
+<img src="https://github.com/akay35/image/blob/main/ab%202.jpeg" alt="This is my world" width="950" height="950"/>  
+<p style="text-align:center; font-style:italic; font-size:14px;">
+This graphic was kindly provided by <a href="https://github.com/pelinsayar" target="_blank">Pelin Sayar</a> Special thanks for the design and contribution. 🌺
+</p>
 
 <hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;">
