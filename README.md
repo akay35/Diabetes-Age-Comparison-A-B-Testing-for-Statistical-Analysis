@@ -61,3 +61,78 @@ This graphic was kindly provided by <a href="https://github.com/pelinsayar" targ
 </p>
 
 <hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;">
+
+
+<h1 style="color:green; font-family:Arial; text-align:center;">Diyabet Yaş Analizi: İstatistiksel Hipotez Testi</h1>
+
+<h2 style="color:blue; font-family:Arial; text-align:left;">Giriş:</h2>
+<p>
+Bu çalışma, diyabet hastası olan ve olmayan bireylerin yaş ortalamaları arasında bir fark olup olmadığını incelemeyi amaçlamaktadır. Hipotez: "Diyabet hastası olan ve olmayan bireylerin yaş ortalamaları arasında bir fark yoktur." şeklinde tanımlanmıştır. "Outcome" değişkeni, bir bireyin diyabet durumu hakkında bilgi verdiği için, yaş verisini analiz etmek ve yaş ortalamalarını karşılaştırmak için kullanılacaktır.
+</p>
+
+<h2 style="color:blue; font-family:Arial; text-align:left;">Gelişme: 🩺📊</h2>
+<p>
+Veri Seti ve Keşifsel Veri Analizi (EDA):  
+Öncelikle, veri setindeki temel değişkenler (gebelik sayısı, glikoz, kan basıncı, deri kalınlığı, insülin, vücut kitle indeksi (BMI), diyabet aile geçmişi ve yaş) gözden geçirilmiştir. Her bir değişken, diyabetle ilgili potansiyel olarak anlamlı bilgiler sunmaktadır. Ayrıca, "Outcome" değişkeni (diyabet durumu) analiz edilmiştir.
+</p>
+
+<p>
+Veri analizi sırasında, yaş verisi için normallik varsayımı test edilmiştir. Bu adım, hangi istatistiksel testin uygun olduğunu belirlemeye yardımcı olur. Eğer veri normal dağılıma uyuyorsa, parametrik testler (örneğin, t-test) kullanılabilir. Aksi takdirde, non-parametrik testler (örneğin, Mann-Whitney U testi) tercih edilir.
+</p>
+
+<img src="https://github.com/akay35/image/blob/main/1.png" alt="This is my world" width="600" height="600"/>  
+
+<img src="https://github.com/akay35/image/blob/main/2%20Korelasyon%20analizi.png" alt="This is my world" width="730" height="360"/>  
+
+<hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;"> 
+
+<h2 style="color:blue; font-family:Arial; text-align:left;">Shapiro-Wilk Testi (Normallik Testi): 🤔</h2>
+<p>
+Shapiro-Wilk testi, verilerin normal dağılıma uyup uymadığını test etmek için kullanılan parametrik olmayan (non-parametrik) bir testtir. Bu test, özellikle küçük örneklemlerle normal dağılımın varlığını kontrol etmek için yaygın olarak kullanılır. Shapiro-Wilk testinin null hipotezi (H0), verilerin normal dağıldığı yönündedir.
+
+Bu testin amacı, verilerin belirli bir normal dağılım modeline uygun olup olmadığını belirlemektir. Yani, eğer p-değeri 0.05'ten küçük çıkarsa, bu, verilerin normal dağılımdan önemli ölçüde sapmış olduğunu gösterir ve parametrik testlerin (örneğin, t-test) uygulanamayacağını ifade eder. Bu durumda non-parametrik testler (örneğin, Mann-Whitney U testi) tercih edilmelidir.
+
+Shapiro-Wilk testinin temel işleyişi:
+
+H0 hipotezi: Veriler normal dağılıyor.
+H1 hipotezi: Veriler normal dağıtmıyor.
+</p>
+<img src="https://github.com/akay35/image/blob/main/3%20shapiro.png" alt="This is my world" width="2100" height="260"/>  
+
+<h2 style="color:blue; font-family:Arial; text-align:left;">Shapiro-Wilk Testi ve Mann-Whitney U Testi Sonuçları: 🧐</h2>
+<p>
+Shapiro-Wilk testindeki p-değeri 0.05'ten küçük çıktığından dolayı, bu durum verinin normal dağılıma uymadığını gösterir. Normal dağılım varsayımının sağlanmadığı durumlarda parametrik testler (örneğin, t-test) kullanılamaz. Bu nedenle, Mann-Whitney U Testi gibi non-parametrik testler uygulanır.
+
+Mann-Whitney U Testi, iki bağımsız grubun medyanlarının farklı olup olmadığını inceleyen bir testtir. Parametrik olmayan veriler için kullanılan bu test, özellikle normal dağılım varsayımının sağlanmadığı durumlarda uygun bir testtir. Bu test, verilerin sıralı veya ranks veriler olduğu durumlarda, gruplar arasındaki farkı test eder.
+</p>
+<img src="https://github.com/akay35/image/blob/main/4%20mannwhitneyu.png" alt="This is my world" width="2100" height="260"/>  
+
+<hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;"> 
+
+<h2 style="color:purple; font-family:Arial; text-align:left;">Sonuçların Değerlendirilmesi: 🚀</h2>
+<p>
+Shapiro-Wilk Testi Sonuçları:
+Shapiro-Wilk testinde elde edilen p-değeri 0.05'ten küçük çıktığından dolayı, bu verinin normal dağılımdan sapmış olduğunu gösterir. Bu durumda, parametrik testler (örneğin, t-test) uygulanamaz, çünkü parametrik testler normal dağılım varsayımına dayanır. Bunun yerine, Mann-Whitney U Testi gibi non-parametrik testler kullanılmalıdır.
+
+- Shapiro-Wilk testi, verilerin normal dağılıp dağılmadığını test eder. Eğer veriniz normal dağılım göstermiyorsa, tıp literatüründe genellikle Mann-Whitney U testi gibi non-parametrik testler kullanılır. Bu, özellikle biyomedikal ve tıbbi araştırmalarda yaygın bir uygulamadır, çünkü bu tür veriler genellikle normal dağılımı sağlamaz ve sıralı veri veya medyan analizine dayanarak sonuçlar elde edilir.
+</p>
+<p>
+Mann-Whitney U Testi Sonuçları: Mann-Whitney U Testi sonucunda p-değeri 0.05'ten küçük çıktığından dolayı, bu durum diyabet hastası olan ve olmayan bireylerin yaş ortalamaları arasında istatistiksel olarak anlamlı bir fark olduğunu gösterir.
+
+- Mann-Whitney U Testi, iki bağımsız grubun medyan değerlerini karşılaştırarak, bu gruplar arasında istatistiksel olarak anlamlı bir fark olup olmadığını test eder. Bu test, özellikle biyolojik ve klinik çalışmalarda, normal dağılıma uymayan veriler için yaygın olarak kullanılır. Bu testin sonuçları, belirli bir hasta grubunun yaş özelliklerinin diğerlerine kıyasla belirgin bir şekilde farklı olup olmadığını anlamamıza yardımcı olabilir.
+</p>
+
+<h2 style="color:purple; font-family:Arial; text-align:left;">Sonuç: 🎯</h2>
+<p>
+Bu çalışma, diyabetin yaş üzerindeki etkilerini araştırırken, verilerin normal dağılıp dağılmadığını test ederek, Mann-Whitney U Testi gibi non-parametrik testlere başvurmuştur. Bu testler, özellikle normal dağılım varsayımının sağlanmadığı durumlarda oldukça etkili bir şekilde gruplar arasındaki farkları tespit etmek için kullanılır.
+
+Elde edilen bulgular, diyabet hastası olan bireylerin yaş ortalamalarının diğer gruptan istatistiksel olarak farklı olduğunu gösteriyorsa, bu durum diyabetin yaşa etkisini daha derinlemesine araştırmayı gerektirir. Bu, tıp literatürüne önemli katkılar sağlayabilir, çünkü diyabetin yaş üzerindeki etkileri ve tedaviye verdiği yanıtlar üzerine daha fazla araştırma yapılmasını teşvik edebilir.
+</p>
+
+<img src="https://github.com/akay35/image/blob/main/ab%202.jpeg" alt="This is my world" width="950" height="950"/>  
+<p style="text-align:center; font-style:italic; font-size:14px;">
+Bu grafik, <a href="https://github.com/pelinsayar" target="_blank">Pelin Sayar</a> tarafından sağlanmıştır. Tasarım ve katkılar için teşekkür ederim. 🌺
+</p>
+
+<hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;">
+
