@@ -14,8 +14,6 @@ First, the key variables in the dataset (number of pregnancies, glucose, blood p
 During data analysis, the assumption of normality for age data was tested. This step helps determine which statistical test is appropriate. If the data follows a normal distribution, parametric tests (e.g., t-test) can be used. Otherwise, non-parametric tests (e.g., Mann-Whitney U test) are preferred.
 </p>
 
-<img src="https://github.com/akay35/image/blob/main/1.png" alt="This is my world" width="600" height="600"/>   
-
 <img src="https://github.com/akay35/image/blob/main/2%20Korelasyon%20analizi.png" alt="This is my world" width="730" height="360"/>   
 
 <hr style="border: 1px solid rgba(0,0,0,0.1); width: 50%;"> 
